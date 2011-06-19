@@ -6,6 +6,7 @@ Install
 =======
     sudo gem install ar_serialize
 Or
+
     rails plugin install git://github.com/grosser/ar_serialize.git
 
 Usage
