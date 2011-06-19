@@ -1,4 +1,4 @@
-Efficient serialize/deserialize of nested Hashes/Arrays with ActiveRecords.
+Dry de/serialize nested Hashes/Arrays of ActiveRecords
 
 Strips unnecessary info like attributes/associations from infinetly deep Hashes/Arrays.
 

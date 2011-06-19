@@ -6,7 +6,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = 'ar_serialize'
-    gem.summary = "Efficient serialize/deserialize of nested Hashes/Arrays including ActiveRecords "
+    gem.summary = "Dry de/serialize nested Hashes/Arrays of ActiveRecords"
     gem.email = "michael@grosser.it"
     gem.homepage = "http://github.com/grosser/#{gem.name}"
     gem.authors = ["Michael Grosser"]
