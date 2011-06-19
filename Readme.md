@@ -1,12 +1,20 @@
-Efficient serialize/deserialize of nested Hashes/Arrays including ActiveRecords 
+Efficient serialize/deserialize of nested Hashes/Arrays with ActiveRecords.
+
+Strips unnecessary info like attributes/associations from infinetly deep Hashes/Arrays.
 
 Install
 =======
     sudo gem install ar_serialize
+Or
+    rails plugin install git://github.com/grosser/ar_serialize.git
 
 Usage
 =====
-    CODE_EXAMPLE
+
+    {:foo => <User>}.to_yaml --> tons of stuff including asociations and attriutes
+    ArSerialize.seriazlize(:foo => <User>) --> {:foo => "ActiveRecord:User:15"}
+    ArSerialize.deseriazlize(:foo => 'ActiveRecord:User:15') --> {:foo => <User>}
+
 
 Author
 ======
